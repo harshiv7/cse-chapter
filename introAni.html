@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Into Animation</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/introAni.css">
+</head>
+<body>
+    <div class="wrapper hidden-section">
+        <h1>Hello</h1>
+    </div>
+    <div class="welcome-section hidden-section">
+        <div class="content-wrap">
+            <ul class="fly-in-text">
+                <li>I</li>
+                <li>n</li>
+                <li>t</li>
+                <li>r</li>
+                <li>o</li> 
+            </ul>
+            <a href="#" class="enter-button">Enter</a>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            var welcomeSection = $('.welcome-section'),
+            enterButton = welcomeSection.find('.enter-button');
+
+            setTimeout(function(){
+                welcomeSection.removeClass('hidden-section');
+            },800);
+
+            enterButton.on('click', function(e){
+                e.preventDefault();
+                welcomeSection.addClass('hidden-section').fadeOut();
+            });
+        });
+    </script>
+</body>
+</html>

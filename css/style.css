@@ -1,0 +1,41 @@
+body{
+    background-color: #0b0b0b;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+}
+.container{
+    background-color: #0b0b0b;
+}
+.loadingPage{
+    background: #FFA726;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.loadingPage .counter  h1{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: #ffffff;
+    font-size: 260px;
+    font-weight: bolder;
+    margin-top: -10px;
+    z-index: 1;
+}
+.data{
+    color: #FFA726;
+    font-size: 60px;
+    letter-spacing: 12px;
+    font-weight : 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: -1;
+}

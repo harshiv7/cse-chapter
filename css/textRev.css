@@ -1,0 +1,27 @@
+html , body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: #101010;
+    font-family: 'Raleway', sans-serif;
+   
+}
+.container{
+    z-index: 1;
+}
+.data{
+    color: #FFA726;
+    font-size: 60px;
+    letter-spacing: 12px;
+    font-weight : 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.wrapper{
+    color: aliceblue;
+    z-index: 0;
+}
